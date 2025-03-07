@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Pilem',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: HomeScreen(),
+      home: MainScreen(),
     );
   }
 }

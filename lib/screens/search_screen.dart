@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pab2/models/movie.dart';
+import 'package:pab2/screens/detail_screen.dart';
 import 'package:pab2/services/api_service.dart';
 
 class SearchScreen extends StatefulWidget {
@@ -98,7 +99,14 @@ class _SearchScreenState extends State<SearchScreen> {
                                   fit: BoxFit.cover,
                                 ),
                                 title: Text(movie.title),
-                                onTap: (){},
+                                onTap: (){
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => DetailScreen(movie: movie),
+                                    )
+                                  );
+                                },
                               ),
                             );
                           }
