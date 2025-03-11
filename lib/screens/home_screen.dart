@@ -14,6 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Movie> _allMovies = [];
   List<Movie> _trendingMovies = [];
   List<Movie> _popularMovies = [];
+
   @override
   void initState() {
     super.initState();
@@ -27,6 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
     await _apiService.getTrendingMovies();
     final List<Map<String, dynamic>> popularMoviesData =
     await _apiService.getPopularMovies();
+
     setState(() {
       _allMovies = allMoviesData.map((e) => Movie.fromJson(e)).toList();
       _trendingMovies =

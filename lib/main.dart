@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pab2/screens/favorite_screen.dart';
 import 'package:pab2/screens/home_screen.dart';
-import 'package:pab2/screens/home_screen.dart';
 import 'package:pab2/screens/search_screen.dart';
 
 void main() => runApp(const MyApp());
